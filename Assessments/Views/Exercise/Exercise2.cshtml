@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Exercise 2";
+}
+
+<h1>Exercise 2</h1>
+<h2>Poker Hand Evaluator</h2>
+
+<form asp-action="Evaluate" method="post">
+    <div class="form-group">
+        <label for="hand" class="control-label">Enter Poker Hand:</label>
+        <input type="text" id="hand" name="hand" placeholder="e.g., Ah As 10c 7d 6s" required class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Evaluate" class="btn btn-primary" />
+    </div>
+</form>
